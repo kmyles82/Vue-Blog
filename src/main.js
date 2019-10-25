@@ -6,9 +6,12 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueNoty from 'vuejs-noty'
 import VueDisqus from 'vue-disqus'
+import wysiwyg from "vue-wysiwyg";
 
 import 'vuejs-noty/dist/vuejs-noty.css'
- 
+import "vue-wysiwyg/dist/vueWysiwyg.css";
+
+Vue.use(wysiwyg, {});
 Vue.use(VueDisqus);
 Vue.use(VueNoty)
 Vue.use(VueAxios, axios)

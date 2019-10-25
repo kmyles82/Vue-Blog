@@ -10,6 +10,9 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn flat v-if="authUser">
+        <router-link to="/articles/create" class="nav-link grey--text text--darken-2">Create new artice</router-link>
+      </v-btn>
       <v-btn flat v-if="!authUser">
         <router-link to="/login" class="nav-link grey--text text--darken-2">Login</router-link>
       </v-btn>
